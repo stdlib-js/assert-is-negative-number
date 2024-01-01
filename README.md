@@ -35,30 +35,20 @@ limitations under the License.
 
 > Test if a value is a number having a negative value.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/assert-is-negative-number
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
--   If you are using Deno, visit the [`deno` branch][deno-url].
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-var isNegativeNumber = require( '@stdlib/assert-is-negative-number' );
+import isNegativeNumber from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-negative-number@deno/mod.js';
+```
+
+You can also import the following named exports from the package:
+
+```javascript
+import { isObject, isPrimitive } from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-negative-number@deno/mod.js';
 ```
 
 #### isNegativeNumber( value )
@@ -68,7 +58,7 @@ Tests if a `value` is a `number` having a negative value.
 <!-- eslint-disable no-new-wrappers -->
 
 ```javascript
-var Number = require( '@stdlib/number-ctor' );
+import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@deno/mod.js';
 
 var bool = isNegativeNumber( -5.0 );
 // returns true
@@ -93,7 +83,7 @@ Tests if a `value` is a primitive `number` having a negative value.
 <!-- eslint-disable no-new-wrappers -->
 
 ```javascript
-var Number = require( '@stdlib/number-ctor' );
+import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@deno/mod.js';
 
 var bool = isNegativeNumber.isPrimitive( -3.0 );
 // returns true
@@ -109,7 +99,7 @@ Tests if a `value` is a `Number` object having a negative value.
 <!-- eslint-disable no-new-wrappers -->
 
 ```javascript
-var Number = require( '@stdlib/number-ctor' );
+import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@deno/mod.js';
 
 var bool = isNegativeNumber.isObject( -3.0 );
 // returns false
@@ -131,9 +121,9 @@ bool = isNegativeNumber.isObject( new Number( -3.0 ) );
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-var Number = require( '@stdlib/number-ctor' );
+import Number from 'https://cdn.jsdelivr.net/gh/stdlib-js/number-ctor@deno/mod.js';
 
-var isNegativeNumber = require( '@stdlib/assert-is-negative-number' );
+import isNegativeNumber from 'https://cdn.jsdelivr.net/gh/stdlib-js/assert-is-negative-number@deno/mod.js';
 
 var bool = isNegativeNumber( -5.0 );
 // returns true
@@ -184,7 +174,7 @@ bool = isNegativeNumber( null );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -246,7 +236,7 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <related-links> -->
 
-[@stdlib/assert/is-number]: https://github.com/stdlib-js/assert-is-number
+[@stdlib/assert/is-number]: https://github.com/stdlib-js/assert-is-number/tree/deno
 
 <!-- </related-links> -->
 
